@@ -81,7 +81,7 @@ class Game_Activity : AppCompatActivity() {
             numbers.add(i)
         }
     }
-
+//zfngfjfjkfdjg
     fun loadDataToView() {
         var t = 0
         for (i in 0 until 4) {

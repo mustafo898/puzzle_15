@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_id"
+
+    android:background="@drawable/bg_wood"
+    tools:context=".About_Activity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:layout_margin="65dp"
+            android:hint="Enter your name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textStyle="italic|bold"
+            android:textSize="24sp"
+            android:inputType="textPersonName"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/DefaultBtnBg"
+            android:id="@+id/next"
+            android:layout_width="200dp"
+            android:text="NEXT"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

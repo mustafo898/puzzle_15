@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_id"
+    android:background="@drawable/bg_wood"
+    tools:context=".About_Activity">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_gravity="start"
+            android:id="@+id/name_win"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_gravity="start"
+            android:layout_marginStart="50dp"
+            android:gravity="start"
+            android:text="Congratulations you won !!!"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginStart="100dp"
+                android:text="@string/step" />
+
+            <TextView
+                android:id="@+id/step"
+                style="@style/TextStyle" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginStart="100dp"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/TextStyle" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/menuButton"
+            style="@style/DefaultBtnBg"
+            android:text="@string/menu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/restartButton"
+            style="@style/DefaultBtnBg"
+            android:text="@string/restart" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/settings_id"
+    android:background="@drawable/bg_wood"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".First_Activity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+       android:orientation="vertical"
+        style="@style/settings">
+
+        <androidx.appcompat.widget.SwitchCompat
+            style="@style/switch_"
+            android:text="Mute"
+            android:id="@+id/volume"
+            android:textOn="On"
+            android:textOff="Off"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            style="@style/switch_"
+            android:id="@+id/mode"
+            android:text="MODE"
+            android:textOn="On"
+            android:textOff="Off"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/choose_language"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:padding="15dp"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:id="@+id/en"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/en"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/ru"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/ru"
+            android:layout_height="60dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/uz"
+            android:id="@+id/uz"
+            android:layout_height="60dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

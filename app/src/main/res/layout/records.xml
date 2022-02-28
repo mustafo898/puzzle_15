@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settings_id"
+    android:background="@drawable/bg_wood"
+    tools:context=".About_Activity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_marginStart="100dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginStart="100dp"
+                android:text="@string/step"/>
+
+            <TextView
+                android:id="@+id/res_step"
+                style="@style/TextStyle"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                style="@style/TextStyle"
+                android:layout_marginStart="100dp"
+                android:text="@string/time"/>
+
+            <TextView
+                android:id="@+id/res_time"
+                style="@style/TextStyle"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backButton"
+            style="@style/DefaultBtnBg"
+            android:text="Back" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</FrameLayout>
